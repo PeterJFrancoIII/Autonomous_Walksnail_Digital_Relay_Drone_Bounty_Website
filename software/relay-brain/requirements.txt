@@ -1,0 +1,3 @@
+# sentinel-relay-brain requirements
+# Install: pip install -r requirements.txt
+pymavlink>=2.4.40

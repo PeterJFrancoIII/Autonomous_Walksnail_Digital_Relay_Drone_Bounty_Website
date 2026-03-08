@@ -1,0 +1,37 @@
+# Sentinel Relay Brain Configuration
+# Copy this file to config.yaml and adjust values for your deployment.
+
+# MAVLink connection to the ArduPilot Flight Controller
+flight_controller:
+  connection: "/dev/ttyAMA0"       # Serial port (UART on Companion Computer)
+  baud_rate: 115200
+
+# Pilot (Ground Station) location
+# Update these before each flight session.
+# In a fully dynamic system, these can be updated via MAVLink telemetry.
+pilot:
+  latitude: 40.0000000             # degrees
+  longitude: -75.0000000           # degrees
+  altitude_msl: 100.0              # meters above mean sea level
+
+# Altitude constraints (meters AGL)
+altitude:
+  max_agl: 120.0                   # FAA 400ft hard-deck (~120m)
+  min_agl: 50.0                    # Minimum operating altitude
+  buffer: 30.0                     # Buffer above highest endpoint for LOS
+
+# Positioning loop
+loop:
+  rate_hz: 1                       # Update frequency (Hz)
+
+# Terrain awareness (Phase 2 — Rule #6)
+terrain:
+  enabled: false                   # Set true when SRTM data is loaded
+  srtm_data_path: "/data/srtm/"   # Path to SRTM .hgt files
+  los_sample_points: 100           # Number of sample points along LOS vector
+
+# Logging
+logging:
+  level: "INFO"                    # DEBUG, INFO, WARNING, ERROR
+  log_to_file: true
+  log_path: "/var/log/sentinel/"
