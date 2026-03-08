@@ -159,13 +159,13 @@ main {
 .container-center {
     max-width: var(--max-content-width);
     margin: 0 auto;
-    padding: 4rem 5%;
+    padding: 2.5rem 5%;
 }
 
 .container-reading {
     max-width: var(--max-reading-width);
     margin: 0 auto;
-    padding: 4rem 5%;
+    padding: 2.5rem 5%;
 }
 
 /* Typography & Markdown Styles */
@@ -175,29 +175,29 @@ h3,
 h4,
 h5 {
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     font-family: 'Inter', sans-serif;
     color: var(--text-main);
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: 900;
     letter-spacing: -1px;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
-    margin-top: 3rem;
+    margin-top: 2rem;
     border-bottom: 1px solid var(--glass-border);
     padding-bottom: 0.5rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     color: var(--accent-blue);
 }
 
@@ -207,9 +207,9 @@ h3 {
 }
 
 p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: var(--text-muted);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 
 strong {
@@ -219,10 +219,10 @@ strong {
 
 ul,
 ol {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     padding-left: 2rem;
     color: var(--text-muted);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 
 li {
@@ -241,11 +241,11 @@ code {
 
 pre {
     background: rgba(0, 0, 0, 0.5);
-    padding: 1.5rem;
+    padding: 1.2rem;
     border-radius: 8px;
     border: 1px solid var(--glass-border);
     overflow-x: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 pre code {
@@ -257,9 +257,9 @@ pre code {
 
 blockquote {
     border-left: 4px solid var(--accent-blue);
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.2rem;
     background: var(--glass-bg);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     border-radius: 0 8px 8px 0;
     font-style: italic;
     color: var(--text-main);
@@ -268,13 +268,13 @@ blockquote {
 hr {
     border: none;
     border-top: 1px solid var(--glass-border);
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 /* Tables */
 .table-container {
     overflow-x: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 table {
@@ -314,9 +314,9 @@ tbody tr:hover {
 .callout {
     background: var(--glass-bg);
     border-left: 4px solid var(--accent-green);
-    padding: 1.5rem;
+    padding: 1.2rem;
     border-radius: 0 8px 8px 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .callout.warning {
@@ -336,7 +336,7 @@ tbody tr:hover {
 /* Specialized Components */
 .hero {
     text-align: center;
-    margin: 2rem auto 5rem;
+    margin: 1.5rem auto 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -344,8 +344,8 @@ tbody tr:hover {
 
 .hero p {
     max-width: 800px;
-    margin: 0 auto 2rem;
-    font-size: 1.25rem;
+    margin: 0 auto 1rem;
+    font-size: 1.15rem;
 }
 
 .status-badge {
@@ -394,21 +394,21 @@ tbody tr:hover {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--glass-border);
     border-radius: 12px;
-    padding: 2.5rem;
+    padding: 2rem;
 }
 
 .info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
 
 .card {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     border-radius: 12px;
-    padding: 2rem;
+    padding: 1.5rem;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
@@ -420,18 +420,18 @@ tbody tr:hover {
 
 .card h3 {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .card p {
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /* Footer */
 footer {
     border-top: 1px solid var(--glass-border);
-    padding: 3rem 5%;
+    padding: 2rem 5%;
     text-align: center;
     margin-top: auto;
 }
@@ -443,7 +443,7 @@ footer p {
 
 /* Tracker Specific (From previous index.html) */
 .tracker-card {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
@@ -451,7 +451,7 @@ footer p {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .tracker-header h2 {
